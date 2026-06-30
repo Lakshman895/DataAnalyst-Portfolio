@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lakshman Chaaraguntla | Data Analyst Portfolio</title>
+  <meta name="description" content="Premium portfolio of Lakshman Chaaraguntla, a professional Data Analyst specializing in SQL, PowerBI, Tableau, Excel, and Machine Learning." />
+  
+  <!-- Preload Critical Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+  <!-- Icons & Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Page Loader -->
+  <div id="loader">
+    <div class="loader-content">
+      <div class="loader-spinner"></div>
+      <div class="loader-text">Loading Insights...</div>
+    </div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar"></div>
+  </div>
+
+  <!-- Ambient Background Blobs -->
+  <div class="bg-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- Sticky Glass Navigation -->
+  <header>
+    <nav class="navbar" id="navbar">
+      <a href="#home" class="nav-logo">Lakshman.C</a>
+      
+      <!-- Hamburger Menu for Mobile -->
+      <button class="nav-toggle" aria-label="Toggle Menu" aria-controls="nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li class="dropdown">
+          <a href="#sql">Projects <i class="fa-solid fa-chevron-down" style="font-size: 0.75rem; margin-left: 4px;"></i></a>
+          <div class="dropdown-content">
+            <a href="#sql"><i class="fa-solid fa-database" style="margin-right: 8px; width: 14px;"></i> SQL Projects</a>
+            <a href="#dashboard"><i class="fa-solid fa-chart-pie" style="margin-right: 8px; width: 14px;"></i> SQL-Tableau-PowerBI</a>
+            <a href="#excel"><i class="fa-solid fa-file-excel" style="margin-right: 8px; width: 14px;"></i> Excel Projects</a>
+            <a href="#regression"><i class="fa-solid fa-chart-line" style="margin-right: 8px; width: 14px;"></i> ML & Regression</a>
+          </div>
+        </li>
+        <li><a href="#timeline-section">Timeline</a></li>
+        <li><a href="#skills">My Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content reveal-left">
+            <div class="hero-badge">
+              <span class="hero-badge-dot"></span>
+              Available for Opportunities
+            </div>
+            <h1 class="hero-title">Hello, I'm Lakshman Chaaraguntla</h1>
+            <div class="hero-typing-container">
+              <span class="hero-typing"></span>
+            </div>
+            <p class="hero-description">
+              A passionate Data Analyst dedicated to transforming complex datasets into clear, actionable business insights. Bridging the gap between raw data and strategic decision-making.
+            </p>
+            <div class="hero-ctas">
+              <a href="#sql" class="btn btn-primary"><span>View Projects</span> <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="https://drive.google.com/file/d/10Ft70NVJhJyXNr4SZSx_fYxhgULag9py/view?usp=sharing" target="_blank" class="btn btn-secondary"><i class="fa-solid fa-file-pdf"></i> Resume</a>
+              <a href="#contact" class="btn btn-ghost">Contact Me</a>
+            </div>
+          </div>
+          <div class="hero-image-wrapper reveal-right">
+            <div class="hero-image-glow"></div>
+            <div class="hero-image-card">
+              <img src="images/profile.jpg" alt="Lakshman Chaaraguntla Profile Photo" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="main-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Profile</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="about-card glass-card reveal">
+          <div class="about-icon-wrapper">
+            <img src="images/about_icon.jpg" alt="Profile Icon" loading="lazy" />
+          </div>
+          <div class="about-info">
+            <h3>Turning Data into Visual Stories</h3>
+            <p>Hello! I’m a Data Analyst with a Bachelor’s degree in Computer Science and a passion for turning raw data into meaningful insights. My fascination with data began early, and over time, I’ve honed my skills in uncovering trends, solving problems, and driving data-informed decisions.</p>
+            <p>With expertise in data visualization, statistical analysis, and machine learning techniques, I enjoy diving into complex datasets to find actionable solutions. Whether it’s creating interactive dashboards, building predictive models, or automating workflows, I’m always eager to apply my skills to real-world challenges.</p>
+            <p>Collaboration and innovation drive my work. I thrive on exploring new tools, adopting best practices, and sharing knowledge to deliver impactful results. My goal is to continuously learn and contribute to projects that make a difference.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- SQL Projects Section -->
+    <section id="sql" class="main-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Database & Querying</span>
+          <h2 class="section-title">SQL Projects</h2>
+        </div>
+        
+        <div class="projects-grid centered-grid reveal">
+          <!-- SQL Project 1 -->
+          <article class="project-card glass-card">
+            <div class="project-img-container">
+              <img src="images/election.webp" alt="LokhSabhaElectionsAnalysis Screenshot" loading="lazy" />
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-header-info">
+                <h3 class="project-title">LokhSabhaElectionsAnalysis</h3>
+                <p class="project-desc">
+                  The project analyzes the Lok Sabha Election Results of India using SQL queries and relational database principles. It provides insights into constituency-wise, state-wise, and party-wise election outcomes, focusing on trends and voting patterns. The analysis is supported by detailed documentation, including SQL queries & results.
+                </p>
+                <div class="project-badges">
+                  <span class="badge">SQL</span>
+                  <span class="badge">Data Analysis</span>
+                  <span class="badge">Relational DB</span>
+                </div>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/Lakshman895/SQL_Lokh_Sabha_Election" target="_blank" class="btn btn-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- SQL Project 2 -->
+          <article class="project-card glass-card">
+            <div class="project-img-container">
+              <img src="images/layoffs.png" alt="WorldLayoffsAnalysis Screenshot" loading="lazy" />
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-header-info">
+                <h3 class="project-title">WorldLayoffsAnalysis</h3>
+                <p class="project-desc">
+                  This project analyzes global layoffs data using SQL, focusing on data cleaning for accuracy and consistency, and exploratory data analysis (EDA) to reveal trends across industries, companies, and regions.
+                </p>
+                <div class="project-badges">
+                  <span class="badge">SQL</span>
+                  <span class="badge">Data Cleaning</span>
+                  <span class="badge">EDA</span>
+                </div>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/Lakshman895/SQL-World-Layoffs" target="_blank" class="btn btn-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote Break 1 -->
+    <section class="quote-section">
+      <div class="container">
+        <div class="quote-card glass-card reveal">
+          <p class="quote-text">
+            Data is like a faint light when you're lost in a dark room. Follow it, try to make sense of it, and you might actually know where you are and what's around you.
+          </p>
+          <span class="quote-author">Analyst Perspective</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- SQL & BI Dashboards Section -->
+    <section id="dashboard" class="main-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Visualization & Dashboards</span>
+          <h2 class="section-title">SQL & PowerBI & Tableau</h2>
+        </div>
+        
+        <div class="projects-grid reveal">
+          <!-- BI Project 1 -->
+          <article class="project-card glass-card">
+            <div class="project-img-container">
+              <img src="images/pizza.webp" alt="PizzaSalesAnalysis Screenshot" loading="lazy" />
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-header-info">
+                <h3 class="project-title">PizzaSalesAnalysis</h3>
+                <p class="project-desc">
+                  This project analyzed a pizza sales dataset using SQL and Tableau to extract actionable business insights. The analysis included querying the data for revenue trends, top-selling pizzas, order patterns, and cumulative sales, presented in an interactive Tableau dashboard and a detailed report.
+                </p>
+                <div class="project-badges">
+                  <span class="badge">SQL</span>
+                  <span class="badge">Tableau</span>
+                  <span class="badge">Business Intelligence</span>
+                </div>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/Lakshman895/Pizza-Sales-Analysis-SQL-Tableau/blob/main/report.pdf" target="_blank" class="btn btn-secondary"><i class="fa-solid fa-file-invoice"></i> Report</a>
+                <a href="https://public.tableau.com/app/profile/latha.charuguntla5375/viz/Best_WorstSellerPizza/Home?publish=yes" target="_blank" class="btn btn-primary"><span>Dashboard</span></a>
+                <a href="https://github.com/Lakshman895/Pizza-Sales-Analysis-SQL-Tableau" target="_blank" class="btn btn-secondary" style="flex: 0.25;"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- BI Project 2 -->
+          <article class="project-card glass-card">
+            <div class="project-img-container">
+              <img src="images/road.webp" alt="RoadAccidentAnalysis Screenshot" loading="lazy" />
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-header-info">
+                <h3 class="project-title">RoadAccidentAnalysis</h3>
+                <p class="project-desc">
+                  This project involves a comprehensive analysis of road accident data to uncover key patterns, trends, and contributing factors using Power BI and SQL. The objective is to identify actionable insights that can improve road safety and inform decision-making.
+                </p>
+                <div class="project-badges">
+                  <span class="badge">SQL</span>
+                  <span class="badge">PowerBI</span>
+                  <span class="badge">Safety Analysis</span>
+                </div>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/Lakshman895/Road-Accident-Sql-PowerBI/blob/main/documentation/report.pdf" target="_blank" class="btn btn-secondary"><i class="fa-solid fa-file-invoice"></i> Report</a>
+                <a href="https://github.com/user-attachments/assets/2deb57eb-1883-4fee-846d-f6852bcc9125" target="_blank" class="btn btn-primary"><span>Dashboard</span></a>
+                <a href="https://github.com/Lakshman895/Road-Accident-Sql-PowerBI" target="_blank" class="btn btn-secondary" style="flex: 0.25;"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- BI Project 3 -->
+          <article class="project-card glass-card">
+            <div class="project-img-container">
+              <img src="images/hr.PNG" alt="HRAnalyticsDashboard Screenshot" loading="lazy" />
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-header-info">
+                <h3 class="project-title">HRAnalyticsDashboard</h3>
+                <p class="project-desc">
+                  The HR Analytics Dashboard is designed to provide comprehensive insights into employee attrition within an organization. Leveraging Tableau for interactive visualizations, it enables HR teams to explore key metrics and make data-driven decisions. The dashboard highlights trends, demographic analysis.
+                </p>
+                <div class="project-badges">
+                  <span class="badge">Tableau</span>
+                  <span class="badge">HR Analytics</span>
+                  <span class="badge">Attrition Modeling</span>
+                </div>
+              </div>
+              <div class="project-actions">
+                <a href="https://public.tableau.com/app/profile/latha.charuguntla5375/viz/HRAnalyticsDashboard_17337311001730/HRAnalyticsDashboard" target="_blank" class="btn btn-primary" style="flex: 1.5;"><span>Dashboard</span></a>
+                <a href="https://github.com/Lakshman895/HR-Analytics-Tableau" target="_blank" class="btn btn-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- BI Project 4 -->
+          <article class="project-card glass-card">
+            <div class="project-img-container">
+              <img src="images/coffee.webp" alt="CoffeeSalesAnalysis Screenshot" loading="lazy" />
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-header-info">
+                <h3 class="project-title">CoffeeSalesAnalysis</h3>
+                <p class="project-desc">
+                  The Coffee Shop Sales Dashboard is a Power BI tool that leverages MySQL for data extraction and transformation. It offers actionable insights into sales performance by location, product categories, and time trends, helping businesses identify top products, peak periods, and growth opportunities for better decision-making.
+                </p>
+                <div class="project-badges">
+                  <span class="badge">MySQL</span>
+                  <span class="badge">PowerBI</span>
+                  <span class="badge">Sales Analytics</span>
+                </div>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/Lakshman895/Coffee-Sales-SQL-Dashboard/blob/main/sql_queries.sql" target="_blank" class="btn btn-secondary"><i class="fa-solid fa-code"></i> Queries</a>
+                <a href="https://app.powerbi.com/view?r=eyJrIjoiODM1NGFmY2QtNmQ5MC00Zjk4LWEyZTEtNmZkMjRkZGE1NmU4IiwidCI6Ijc5ZjkxNWQ3LWJiNzYtNDZjYy1hY2RiLTY4YTRmZjBhZWRkYiJ9" target="_blank" class="btn btn-primary"><span>Dashboard</span></a>
+                <a href="https://github.com/Lakshman895/Coffee-Sales-SQL-Dashboard" target="_blank" class="btn btn-secondary" style="flex: 0.25;"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Excel Projects Section -->
+    <section id="excel" class="main-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Spreadsheets & Pivot Tables</span>
+          <h2 class="section-title">Excel Projects</h2>
+        </div>
+        <div style="max-width: 420px; margin: 0 auto;">
+          <!-- Excel Project 1 -->
+          <article class="project-card glass-card reveal">
+            <div class="project-img-container">
+              <img src="images/bank.webp" alt="BankLoanAnalysis Screenshot" loading="lazy" />
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-header-info">
+                <h3 class="project-title">BankLoanAnalysis</h3>
+                <p class="project-desc">
+                  A dynamic and interactive Excel-based dashboard designed for comprehensive analysis of bank loan applications. It features key performance metrics and detailed visualizations for tracking trends, segmentation, and insights into loan data.
+                </p>
+                <div class="project-badges">
+                  <span class="badge">Excel</span>
+                  <span class="badge">Financial Analysis</span>
+                  <span class="badge">KPI Dashboards</span>
+                </div>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/Lakshman895/Bank-Loan-Excel-Dashboard/blob/main/Dashboard.pdf" target="_blank" class="btn btn-primary"><span>Dashboard PDF</span></a>
+                <a href="https://github.com/Lakshman895/Bank-Loan-Excel-Dashboard" target="_blank" class="btn btn-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Readme Banner Info -->
+    <section class="main-section" style="padding: var(--spacing-md) 0;">
+      <div class="container">
+        <div class="readme-banner glass-card reveal">
+          <i class="fa-solid fa-circle-info"></i>
+          <p>
+            <strong>NOTE:</strong> For comprehensive details about all projects, including the underlying methodology, the technologies and models implemented, and the outcomes achieved, please refer to the README file available on my GitHub repository.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Regression & Classification Section (CENTERED 2-COLUMN GRID) -->
+    <section id="regression" class="main-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Machine Learning</span>
+          <h2 class="section-title">Regression & Classification Projects</h2>
+        </div>
+        
+        <div class="projects-grid centered-grid reveal">
+          <!-- ML Project 1 -->
+          <article class="project-card glass-card">
+            <div class="project-img-container">
+              <img src="images/car.webp" alt="CarPricePrediction Screenshot" loading="lazy" />
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-header-info">
+                <h3 class="project-title">CarPricePrediction</h3>
+                <p class="project-desc">
+                  This project leverages machine learning algorithms to accurately predict car prices based on key features such as make, model, year, fuel type and mileage specifications. By analyzing historical data and identifying patterns, the model provides valuable insights to users, empowering them to make informed purchasing decisions.
+                </p>
+                <div class="project-badges">
+                  <span class="badge">Machine Learning</span>
+                  <span class="badge">Python</span>
+                  <span class="badge">Regression Model</span>
+                </div>
+              </div>
+              <div class="project-actions">
+                <a href="https://carpriceprediction-1-y02c.onrender.com/" target="_blank" class="btn btn-primary"><span>Live App</span></a>
+                <a href="https://github.com/Lakshman895/CarPricePrediction" target="_blank" class="btn btn-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ML Project 2 -->
+          <article class="project-card glass-card">
+            <div class="project-img-container">
+              <img src="images/medicine.png" alt="MedicineRecommendationSystem Screenshot" loading="lazy" />
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-header-info">
+                <h3 class="project-title">MedicineRecommendationSystem</h3>
+                <p class="project-desc">
+                  This project develops a machine learning model to predict diseases based on user-reported symptoms. The model then provides personalized recommendations for medication, dietary adjustments, exercise routines, and preventative measures to support users in managing their health.
+                </p>
+                <div class="project-badges">
+                  <span class="badge">Machine Learning</span>
+                  <span class="badge">Python</span>
+                  <span class="badge">Classification Model</span>
+                </div>
+              </div>
+              <div class="project-actions">
+                <a href="https://medicinerecommendationsystem.onrender.com/" target="_blank" class="btn btn-primary"><span>Live App</span></a>
+                <a href="https://github.com/Lakshman895/Medicine-Recommendation-System" target="_blank" class="btn btn-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote Break 2 -->
+    <section class="quote-section">
+      <div class="container">
+        <div class="quote-card glass-card reveal">
+          <p class="quote-text">
+            You can have data without information, but you cannot have information without data.
+          </p>
+          <span class="quote-author">Daniel Keys Moran</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Experience Timeline Section -->
+    <section id="timeline-section" class="main-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Career Milestones</span>
+          <h2 class="section-title">My Journey</h2>
+        </div>
+        <div class="timeline">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item reveal-left">
+            <div class="timeline-node"></div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-date">Jan 2024 - Present</span>
+              <h3 class="timeline-title">Data Analyst & Developer</h3>
+              <span class="timeline-company">Freelance / Research Projects</span>
+              <p class="timeline-desc">
+                Building and maintaining end-to-end data analytics pipelines. Integrating databases with visualization tools like Tableau and PowerBI. Deploying machine learning models to production.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item reveal-right">
+            <div class="timeline-node"></div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-date">2023 - 2026</span>
+              <h3 class="timeline-title">Bachelor's Degree in Computer Science</h3>
+              <span class="timeline-company">University Education</span>
+              <p class="timeline-desc">
+                Acquired solid foundations in databases, algorithms, object-oriented programming, statistical analysis, and machine learning. Excelled in analytical coursework.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item reveal-left">
+            <div class="timeline-node"></div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-date">2023</span>
+              <h3 class="timeline-title">Data Science & Analytics Specialization</h3>
+              <span class="timeline-company">Academic Projects & Bootcamps</span>
+              <p class="timeline-desc">
+                Focused on database design, advanced SQL queries, data wrangling, exploratory analysis, and building classification/regression models using Scikit-Learn.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Skills Section -->
+    <section id="skills" class="main-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Expertise</span>
+          <h2 class="section-title">Technical Skills</h2>
+        </div>
+        
+        <div class="skills-grid">
+          
+          <!-- Category 1: Programming -->
+          <div class="skills-category glass-card reveal">
+            <h3 class="skills-category-title"><i class="fa-solid fa-code"></i> Programming</h3>
+            <div class="skills-list">
+              
+              <!-- Python (Circular Showcase) -->
+              <div class="skills-circles" style="margin-bottom: var(--spacing-xs);">
+                <div class="skill-circle-item python">
+                  <div class="skill-circle-wrapper">
+                    <svg class="skill-circle-svg">
+                      <circle class="circle-bg" cx="45" cy="45" r="40"></circle>
+                      <circle class="circle-progress" cx="45" cy="45" r="40" data-percent="90"></circle>
+                    </svg>
+                    <div class="skill-circle-val">
+                      <img src="images/python.png" alt="Python Icon" loading="lazy" onerror="this.src='https://img.icons8.com/color/48/python.png';" />
+                      <span>90%</span>
+                    </div>
+                  </div>
+                  <span class="skill-name" style="margin-top: 6px;">Python</span>
+                </div>
+              </div>
+              
+              <!-- NumPy (Premium Card) -->
+              <div class="skill-card-premium numpy">
+                <div class="skill-header">
+                  <img src="images/numpy.png" alt="NumPy Icon" loading="lazy" onerror="this.src='https://img.icons8.com/color/48/numpy.png';" />
+                  <span class="skill-card-title">NumPy</span>
+                </div>
+                <div class="skill-progress-bar-container">
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" data-width="85%"></div>
+                  </div>
+                  <span class="skill-percentage-text">85%</span>
+                </div>
+              </div>
+              
+              <!-- Pandas (Premium Card) -->
+              <div class="skill-card-premium pandas">
+                <div class="skill-header">
+                  <img src="images/pandas.png" alt="Pandas Icon" loading="lazy" onerror="this.src='https://img.icons8.com/color/48/pandas.png';" />
+                  <span class="skill-card-title">Pandas</span>
+                </div>
+                <div class="skill-progress-bar-container">
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" data-width="90%"></div>
+                  </div>
+                  <span class="skill-percentage-text">90%</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Category 2: Data Analytics & Databases -->
+          <div class="skills-category glass-card reveal delay-100">
+            <h3 class="skills-category-title"><i class="fa-solid fa-database"></i> Data Analytics & DB</h3>
+            <div class="skills-list">
+              
+              <!-- SQL (Circular Showcase) -->
+              <div class="skills-circles" style="margin-bottom: var(--spacing-xs);">
+                <div class="skill-circle-item sql">
+                  <div class="skill-circle-wrapper">
+                    <svg class="skill-circle-svg">
+                      <circle class="circle-bg" cx="45" cy="45" r="40"></circle>
+                      <circle class="circle-progress" cx="45" cy="45" r="40" data-percent="88"></circle>
+                    </svg>
+                    <div class="skill-circle-val">
+                      <img src="images/sql.png" alt="SQL Icon" loading="lazy" onerror="this.src='https://img.icons8.com/color/48/sql.png';" />
+                      <span>88%</span>
+                    </div>
+                  </div>
+                  <span class="skill-name" style="margin-top: 6px;">SQL</span>
+                </div>
+              </div>
+
+              <!-- Excel (Premium Card) -->
+              <div class="skill-card-premium excel">
+                <div class="skill-header">
+                  <img src="images/excel.png" alt="Excel Icon" loading="lazy" onerror="this.src='https://img.icons8.com/color/48/ms-excel.png';" />
+                  <span class="skill-card-title">Excel</span>
+                </div>
+                <div class="skill-progress-bar-container">
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" data-width="85%"></div>
+                  </div>
+                  <span class="skill-percentage-text">85%</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Category 3: Visualization & Tools -->
+          <div class="skills-category glass-card reveal delay-200">
+            <h3 class="skills-category-title"><i class="fa-solid fa-chart-pie"></i> Visualization & Tools</h3>
+            <div class="skills-list">
+              
+              <!-- BI Tools (Circular Showcases) -->
+              <div class="skills-circles" style="margin-bottom: var(--spacing-xs);">
+                <!-- PowerBI -->
+                <div class="skill-circle-item powerbi">
+                  <div class="skill-circle-wrapper">
+                    <svg class="skill-circle-svg">
+                      <circle class="circle-bg" cx="45" cy="45" r="40"></circle>
+                      <circle class="circle-progress" cx="45" cy="45" r="40" data-percent="90"></circle>
+                    </svg>
+                    <div class="skill-circle-val">
+                      <img src="images/powerbi.png" alt="PowerBI Icon" loading="lazy" onerror="this.src='https://img.icons8.com/color/48/power-bi.png';" />
+                      <span>90%</span>
+                    </div>
+                  </div>
+                  <span class="skill-name" style="margin-top: 6px;">PowerBI</span>
+                </div>
+
+                <!-- Tableau -->
+                <div class="skill-circle-item tableau">
+                  <div class="skill-circle-wrapper">
+                    <svg class="skill-circle-svg">
+                      <circle class="circle-bg" cx="45" cy="45" r="40"></circle>
+                      <circle class="circle-progress" cx="45" cy="45" r="40" data-percent="88"></circle>
+                    </svg>
+                    <div class="skill-circle-val">
+                      <img src="images/tableau.png" alt="Tableau Icon" loading="lazy" onerror="this.src='https://img.icons8.com/color/48/tableau-software.png';" />
+                      <span>88%</span>
+                    </div>
+                  </div>
+                  <span class="skill-name" style="margin-top: 6px;">Tableau</span>
+                </div>
+              </div>
+
+              <!-- Matplotlib (Premium Card) -->
+              <div class="skill-card-premium matplotlib">
+                <div class="skill-header">
+                  <img src="images/matplotlib.png" alt="Matplotlib Icon" loading="lazy" onerror="this.src='https://img.icons8.com/external-flat-juicy-fish/48/external-matplotlib-data-science-flat-juicy-fish.png';" />
+                  <span class="skill-card-title">Matplotlib</span>
+                </div>
+                <div class="skill-progress-bar-container">
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" data-width="80%"></div>
+                  </div>
+                  <span class="skill-percentage-text">80%</span>
+                </div>
+              </div>
+
+              <!-- Seaborn (Premium Card) -->
+              <div class="skill-card-premium seaborn">
+                <div class="skill-header">
+                  <img src="images/seaborn-1.svg" alt="Seaborn Icon" loading="lazy" onerror="this.src='https://img.icons8.com/color/48/line-chart.png';" />
+                  <span class="skill-card-title">Seaborn</span>
+                </div>
+                <div class="skill-progress-bar-container">
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" data-width="80%"></div>
+                  </div>
+                  <span class="skill-percentage-text">80%</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="main-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Contact Me</h2>
+        </div>
+        <div class="contact-grid">
+          <!-- Info Card -->
+          <div class="contact-info-card glass-card reveal-left">
+            <div class="contact-header">
+              <h3>Let's collaborate!</h3>
+              <p>Have a question or want to work together on a data project? Feel free to reach out using the form or connect through my social links.</p>
+            </div>
+            <div class="contact-details">
+              <div class="contact-detail-item">
+                <div class="contact-detail-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="contact-detail-text">
+                  <h4>Location</h4>
+                  <p>India</p>
+                </div>
+              </div>
+              <div class="contact-detail-item">
+                <div class="contact-detail-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact-detail-text">
+                  <h4>Email</h4>
+                  <p>lakshmancharubsc@gmail.com</p>
+                </div>
+              </div>
+              <!-- Added Phone Number -->
+              <div class="contact-detail-item">
+                <div class="contact-detail-icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="contact-detail-text">
+                  <h4>Phone</h4>
+                  <p>+91 93900 76204</p>
+                </div>
+              </div>
+            </div>
+            <div class="contact-socials">
+              <a href="https://www.linkedin.com/in/lakshmancharuguntla/" target="_blank" class="contact-social-link" aria-label="LinkedIn Profile">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com/Lakshman895" target="_blank" class="contact-social-link" aria-label="GitHub Profile">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form (Removed Message Field) -->
+          <div class="contact-form-card glass-card reveal-right">
+            <form class="contact-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+              <div class="form-group">
+                <input type="text" id="name" class="form-control" placeholder=" " value="Lakshman Chaaraguntla" required />
+                <label for="name" class="form-label">Your Name</label>
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" class="form-control" placeholder=" " value="lakshmancharubsc@gmail.com" required />
+                <label for="email" class="form-label">Your Email</label>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">Lakshman Chaaraguntla</div>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/lakshmancharuguntla/" target="_blank" class="footer-social-link" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/Lakshman895" target="_blank" class="footer-social-link" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Lakshman Chaaraguntla. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Core JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
